@@ -16,7 +16,7 @@ function App() {
     const endpoint = isLogin ? '/api/login' : '/api/signup';
 
     try {
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`https://signup_backend.onrender.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
